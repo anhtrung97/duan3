@@ -1,0 +1,68 @@
+$tim: #87509c //Tím 
+$ngoc: #17c2a4 // Cyan
+$vang: #ffdd99 // Vang 
+$do: #d74680 // Đỏ 
+$xanh: #3c5499 // Xanh 
+$cam: #eb7d4b
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200i,300,300i,400,400i,600,600i,700,700i,900')
+html, body
+    font-family: 'Titillium Web', sans-serif
+    font-size: 14px
+    font-weight: 500
+    
+    section
+        display: flex
+        justify-content: center
+        align-items: center
+    section.home-slider
+        min-height: 520px
+        background: $tim
+        color: white
+        h1
+            font-weight: 700
+            font-size: 2.2rem
+        .btn-more
+            background: $cam
+            text-transform: uppercase
+            border-radius: 2px
+            color: white
+            font-weight: 600
+            border: 2px solid $cam
+            padding: 1rem 3rem
+            &:hover
+                background: transparent
+                color: $cam
+    section.home-service
+        min-height: 760px
+        background: $ngoc
+        padding: 2rem 0
+        color: white
+        .title
+            h2
+                font-size: 2.4rem
+                font-weight: 700
+                text-transform: uppercase
+                position: relative
+                padding-bottom: 1rem
+                &:after
+                    content: ''
+                    display: block
+                    height: 3px
+                    background: darken($ngoc, 10%)
+                    width: 70px
+                    position: absolute
+                    bottom: 0
+                    left: 50%
+                    transform: translateX(-50%)
+            p
+                font-size: 1.3rem
+                max-width: 70%
+                margin: auto
+        h3
+            font-weight: 600
+            text-transform: uppercase
+            padding: 1rem 0
+        p 
+            font-weight: 300
+            font-size: 1.2rem
+
